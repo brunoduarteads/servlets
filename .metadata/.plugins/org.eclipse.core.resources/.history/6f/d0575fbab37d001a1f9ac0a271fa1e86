@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Festa</title>
+</head>
+<body>
+
+<form action="/gerenciador/cadastroFesta" method="post" >
+
+    Cliente: <input type="text" name="nome" />
+    
+    Aniversariante: <input type="text" name="aniversariante" />
+    
+    Temas: <select> <optgroup label="Masculinos"> 
+     <option>Liga da Justiça</option>
+     <option>Ben 10</option>
+     <option>Vindadores</option>
+     <option>KND</option>
+     <option>Jaspion</option>
+     <option>Changerman</option>
+     <option>Power Rangers</option>
+     <option>National Kid</option>
+     <option>Corrida Maluca</option>
+     
+     </optgroup>
+     <optgroup label="Femininos">
+     <option>A bela e a fera</option>
+     <option>Barbie</option>
+     <option>Juniper Lee</option>
+     <option>As meninas super poderosas</option>
+     <option>Mulan</option>
+     <option>Peppa Pig</option>
+     <option>Clube das Winx</option>
+
+     </optgroup>
+
+    
+    </select>
+    
+    
+    
+    <input type="submit"   />
+  
+</form>
+
+</body>
+</html>

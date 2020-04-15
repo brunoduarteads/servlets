@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Festa</title>
+</head>
+<body>
+
+<form action="/gerenciador/cadastroFesta" method="post" >
+   <div>
+    Cliente: <input type="text" name="nome" />
+    </div> <div>
+    Aniversariante: <input type="text" name="aniversariante" />
+    </div><div>
+    Temas: <select name="selecionaTema" > <optgroup label="Masculinos"> 
+     <option>Liga da Justiça</option>
+     <option>Ben 10</option>
+     <option>Vindadores</option>
+     <option>KND</option>
+     <option>Jaspion</option>
+     <option>Changerman</option>
+     <option>Power Rangers</option>
+     <option>National Kid</option>
+     <option>Corrida Maluca</option>
+     
+     </optgroup>
+     <optgroup label="Femininos">
+     <option>A bela e a fera</option>
+     <option>Barbie</option>
+     <option>Juniper Lee</option>
+     <option>As meninas super poderosas</option>
+     <option>Mulan</option>
+     <option>Peppa Pig</option>
+     <option>Clube das Winx</option>
+
+     </optgroup>  </select>
+    
+    </div> <div>
+    Data: <input type="text" name="data" />   
+    
+    </div><div>
+    Horário de início: <input type="time" name="horario_inicio" />
+    
+    </div><div>
+    Horário de término: <input type="time" name="horario_termino" />
+
+    </div>
+
+    <input type="submit" name="acao" value="Cadastrar Festa" />
+  
+</form>
+
+</body>
+</html>

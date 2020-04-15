@@ -1,0 +1,50 @@
+package gerenciador.servlet;
+
+public class FestasCadastradas {
+
+	private String nomeAniversariante;
+    private String nomeCliente;
+    private String temaSelecionado;
+    private String dataText;
+    private int horaInicio;
+    private int horaFim;
+	
+    public String getNomeAniversariante() {
+		return nomeAniversariante;
+	}
+	public void setNomeAniversariante(String nomeAniversariante) {
+		this.nomeAniversariante = nomeAniversariante;
+	}
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+	public String getTemaSelecionado() {
+		return temaSelecionado;
+	}
+	public void setTemaSelecionado(String temaSelecionado) {
+		this.temaSelecionado = temaSelecionado;
+	}
+	public String getDataText() {
+		return dataText;
+	}
+	public void setDataText(String dataText) {
+		this.dataText = dataText;
+	}
+	public int getHoraInicio() {
+		return horaInicio;
+	}
+	public void setHoraInicio(int hora1) {
+		this.horaInicio = hora1;
+	}
+	public int getHoraFim() {
+		return horaFim;
+	}
+	public void setHoraFim(int horaFim) {
+		this.horaFim = horaFim;
+	}
+	
+	
+}
