@@ -27,6 +27,8 @@ public class CadastroFestaServlet extends HttpServlet {
         String dataText = request.getParameter("data");
         String horaInicio = request.getParameter("horario_inicio");
         String horaFim = request.getParameter("horario_termino");
+        
+        request.setAttribute("aniversariante", nomeAniversariante);
     
         
         FestasCadastradas festa = new FestasCadastradas();
@@ -57,21 +59,25 @@ public class CadastroFestaServlet extends HttpServlet {
         	Date hora2 = new SimpleDateFormat("HH:mm").parse(horaFim);
         	horafi = Calendar.getInstance();
         	horafi.setTime(hora2);
-        
+        	
         	if(hora1.after(hora2)) {
         		out.print("O horario de início deve ser anterior ao de término");
-
+            
+            
+        	}else{
+        		RequestDispatcher rd = request.getRequestDispatcher("/cadastroConcluido.jsp");
+        	rd.forward(request, response);
         	}
+
         }catch (ParseException e) {
         	out.println("Não foi possivel converter esta data");
         	return;
     	}
-	
-    	RequestDispatcher rd = request.getRequestDispatcher("/cadastroConcluido.jsp");
-    	rd.forward(request, response);
-        
+
              out.close();
 	}
+
+	
 }
 
 
